@@ -32,7 +32,7 @@ const getInfo = async(event)=>{
 
         }
         catch{
-            temp_1.innerText ='';
+            condition_1.innerText ='';
             temp_1.innerHTML = `<h3 >Please Enter the city Name Properly</h3>`;
             no_output.innerText ='';
         }
