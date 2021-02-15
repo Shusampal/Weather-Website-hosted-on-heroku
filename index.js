@@ -24,6 +24,6 @@ app.get("/*",(req,res)=>{
 });
 
 
-app.listen(port,'127.0.0.1',()=>{
+app.listen(port,()=>{
     console.log(`Listening to port ${port}`);
 });
