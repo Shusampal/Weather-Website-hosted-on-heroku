@@ -1,0 +1,122 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Baloo Bhaina 2', cursive;
+    background: url(./BG.jpg) center center/cover;
+}
+
+html{
+    height: 100vh;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 60px;
+    
+}
+
+
+h2{
+    color: rgb(1, 2, 46);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.container{
+    height: 80%;
+}
+
+.fa-snowflake {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes anim{
+    from{
+        
+        transform: rotate(0deg);
+        
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+button{
+    border-radius: 8px;
+    background: rgb(27, 55, 92);
+    font-size: 20px;
+    outline: none;
+    box-shadow: 0px 8px 6px -6px black;
+}
+
+
+button:hover{
+    color: goldenrod;
+    outline: none;
+    
+}
+
+
+.navbar{
+    background: rgb(6, 6, 47);
+    color: white;
+}
+
+
+.navbar-toggler{
+    background: white;
+}
+
+
+.navbar a{
+    color: white;
+    margin-right: 20px;
+}
+
+#navbarSupportedContent ul a:hover{
+    background: rgb(93, 130, 200);
+    border-radius: 3px;
+}
+
+
+
+
+footer h2{
+    color: white;
+}
+
+
+.rotate{
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    border-top: 8px solid rgb(70, 105, 146);
+}
+
+@keyframes rotate
+{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
