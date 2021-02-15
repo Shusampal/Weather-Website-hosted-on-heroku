@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const hbs = require('hbs');
+const port = process.env.PORT || 8000
 const { request } = require('http');
 app.set('view engine','hbs');
 app.use(express.static(path.join(__dirname, '/static')));
@@ -23,6 +24,6 @@ app.get("/*",(req,res)=>{
 });
 
 
-app.listen(8000,'127.0.0.1',()=>{
-    console.log("Listening to port 8000");
+app.listen(port,'127.0.0.1',()=>{
+    console.log(`Listening to port ${port}`);
 });
